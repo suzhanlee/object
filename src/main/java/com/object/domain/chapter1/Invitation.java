@@ -1,4 +1,4 @@
-package com.object.domain;
+package com.object.domain.chapter1;
 
 import java.time.LocalDateTime;
 
