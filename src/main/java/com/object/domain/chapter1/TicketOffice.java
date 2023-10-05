@@ -2,6 +2,7 @@ package com.object.domain.chapter1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class TicketOffice {
@@ -28,5 +29,7 @@ public class TicketOffice {
 
     public void sellTicketTo(Audience audience) {
         plusAmount(audience.buy(getTicket()));
+        HashSet hashSet = new HashSet();
+        hashSet.addAll(List.of(1, 2, 3));
     }
 }
