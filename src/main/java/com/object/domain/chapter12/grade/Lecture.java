@@ -42,4 +42,14 @@ public class Lecture {
     public long failCount() {
         return scores.size() - passCount();
     }
+
+    public String stats() {
+        // getEvaluationMethod 는 현재 클래스의 메서드를 호출하는 것이 아닌 현재 객체에게
+        // getEvaluationMethod 메시지를 전송하는 것이다.
+        return String.format("Title: %s, Evaluation Method: %s", title, this.getEvaluationMethod());
+    }
+
+    public String getEvaluationMethod() {
+        return "Pass or Fail";
+    }
 }
