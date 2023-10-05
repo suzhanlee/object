@@ -58,4 +58,8 @@ public class GradeLecture extends Lecture {
         }
         return count > 0 ? (double) sum / count : 0;
     }
+
+//    public String getEvaluationMethod() {
+//        return "Grade";
+//    }
 }
