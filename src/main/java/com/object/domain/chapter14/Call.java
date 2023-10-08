@@ -3,12 +3,14 @@ package com.object.domain.chapter14;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
+import lombok.Getter;
 
 public class Call {
 
 //    private LocalDateTime from;
 //    private LocalDateTime to;
 
+    @Getter
     private DateTimeInterval interval;
 
     public Call(DateTimeInterval interval) {
@@ -16,7 +18,7 @@ public class Call {
     }
 
     public Duration getDuration() {
-        return interval.getDuration();
+        return interval.duration();
     }
 
     public LocalDateTime getFrom() {

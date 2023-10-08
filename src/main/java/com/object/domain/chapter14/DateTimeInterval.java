@@ -20,7 +20,7 @@ public class DateTimeInterval {
         this.to = to;
     }
 
-    public Duration getDuration() {
+    public Duration duration() {
         return Duration.between(from, to);
     }
 
