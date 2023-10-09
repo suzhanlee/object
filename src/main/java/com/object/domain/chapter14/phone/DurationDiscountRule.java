@@ -1,4 +1,4 @@
-package com.object.domain.chapter14;
+package com.object.domain.chapter14.phone;
 
 import com.object.domain.chapter2.Money;
 import java.time.Duration;
